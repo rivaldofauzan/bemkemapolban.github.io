@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" class="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BEM KEMA POLBAN 2023</title>
+    
+    <link rel="stylesheet" href="build/assets/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/logo_pilar.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/logo_pilar.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/logo_pilar.png">
+    <link rel="manifest" href="assets/favicon/logo_pilar.png">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-723Y286KJ7"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'G-723Y286KJ7');
+    </script>
+    
+    
+    <style>
+        .normalize-text b {
+            font-weight: inherit;
+        }
+
+        .normalize-text i {
+            font-style: inherit
+        }
+    </style>
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="sticky top-0 z-50 bg-white/80 dark:bg-gray-800/70 backdrop-blur-lg w-full">
+    <nav
+        class="
+        lg:container mx-auto flex flex-wrap items-center justify-between
+         w-full py-4 lg:py-0 text-lg text-gray-700 h-20 nav-container
+       ">
+        <div class="px-4 lg:px-0 h-full py-0 lg:py-2">
+            <a href="">
+                                    <img src="assets/favicon/logo_pilar.png" class="h-full" alt="Logo Kabinet Pilar Impresif">
+                            </a>
+        </div>
+
+        <input class="checkbox opacity-0 right-5 w-8 h-8 absolute z-10 lg:hidden" type="checkbox" name=""
+            id="menu-button" />
+        <div class="hamburger-lines flex flex-col justify-between h-6 w-8 absolute right-5 lg:hidden">
+            <span class="h-1 w-full rounded-lg bg-gray-600 dark:bg-gray-400 line1 lg:hidden"></span>
+            <span class="h-1 w-full rounded-lg bg-gray-600 dark:bg-gray-400 line2 lg:hidden"></span>
+            <span class="h-1 w-full rounded-lg bg-gray-600 dark:bg-gray-400 line3 lg:hidden"></span>
+        </div>
+
+        <div class="hidden px-4 lg:px-0 mt-5 lg:mt-0 w-full lg:flex lg:items-center lg:w-auto" id="menu">
+            <ul
+                class="
+             h-[80vh] lg:h-min overflow-y-auto lg:overflow-visible
+             menu menu-horizontal
+             pt-4 text-base text-gray-700
+             flex-col w-full
+             lg:flex
+             lg:flex-row
+             lg:justify-between
+             lg:pt-0">
+                <li>
+                    <a class="lg:p-4 py-3 flex hover:text-bemsun rounded-lg w-full lg:w-fit lg:hover:bg-transparent text-bemsun font-bold"
+                        href="">Beranda</a>
+                </li>
+                <li>
+                    <a class="lg:p-4 py-3 flex hover:text-bemsun rounded-lg w-full lg:w-fit lg:hover:bg-transparent text-gray-500 dark:text-gray-300"
+                        href="">Tentang Kami</a>
+                </li>
+                <li>
+                    <a class="lg:p-4 py-3 flex hover:text-bemsun rounded-lg w-full lg:w-fit lg:hover:bg-transparent text-gray-500 dark:text-gray-300"
+                        href="">Kepengurusan</a>
+                </li>
+                <li>
+                    <a class="lg:p-4 py-3 flex hover:text-bemsun rounded-lg w-full lg:w-fit lg:hover:bg-transparent text-gray-500 dark:text-gray-300"
+                        href="">Departemen</a>
+                </li>
+                <li>
+                    <a class="lg:p-4 py-3 flex hover:text-bemsun rounded-lg w-full lg:w-fit lg:hover:bg-transparent text-gray-500 dark:text-gray-300"
+                        href="">Artikel</a>
+                </li>
+                <li class="group">
+                    <a
+                        class="lg:p-4 py-3 hidden lg:flex hover:text-bemsun rounded-lg w-full lg:w-fit lg:hover:bg-transparent text-gray-500 dark:text-gray-300">
+                        Lainnya
+                        <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                            viewBox="0 0 24 24">
+                            <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
+                        </svg>
+                    </a>
+                    <ul
+                        class="p-2 bg-base-100 contents lg:hidden flex-col lg:group-hover:flex border border-gray-400/20 rounded-lg">
+                        <li
+                            class="text-gray-500 dark:text-gray-300 hover:text-bemsun rounded-lg">
+                            <a class="rounded-lg" href="">Advocare</a>
+                        </li>
+                        <li
+                            class="text-gray-500 dark:text-gray-300 hover:text-bemsun rounded-lg">
+                            <a class="rounded-lg" href="">Kritik & Saran</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="lg:p-4 py-3 flex hover:text-bemsun rounded-lg w-full lg:w-fit lg:hover:bg-transparent text-gray-500 dark:text-gray-300"
+                        href=""></a>
+                </li>
+                
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<script>
+    function theme(current) {
+        const theme = (current != 'dark') ? 'dark' : 'light';
+        document.cookie = 'theme=' + theme + ";domain=" + window.location.hostname + ";path=/";
+        console.log(theme)
+        location.reload();
+    }
+
+    // Mobile navbar button toggle
+    const button = document.querySelector('#menu-button');
+    const header = document.querySelector('header');
+    const body = document.querySelector('body');
+
+    button.addEventListener('click', () => {
+        try {
+            document.querySelector('#menu-button:checked').value
+            body.classList.add("overflow-hidden")
+            body.classList.add("pt-20")
+            header.classList.add("mobile-nav")
+        } catch (error) {
+            body.classList.remove("overflow-hidden")
+            body.classList.remove("pt-20")
+            header.classList.remove("mobile-nav")
+        }
+    });
+</script>
+
+
+<style>
+    .mobile-nav {
+        position: fixed;
+        height: 100vh;
+    }
+
+    @media only screen and (min-width: 1024px) {
+        .mobile-nav {
+            position: sticky;
+            height: auto;
+        }
+    }
+
+    .nav-container .hamburger-lines .line1 {
+        transform-origin: 0% 0%;
+        transition: transform 0.4s ease-in-out;
+    }
+
+    .nav-container .hamburger-lines .line2 {
+        transition: transform 0.2s ease-in-out;
+    }
+
+    .nav-container .hamburger-lines .line3 {
+        transform-origin: 0% 100%;
+        transition: transform 0.4s ease-in-out;
+    }
+
+    .nav-container input[type="checkbox"]:checked~.hamburger-lines .line1 {
+        transform: rotate(45deg);
+    }
+
+    .nav-container input[type="checkbox"]:checked~.hamburger-lines .line2 {
+        transform: scaleX(0) translateX(10px);
+    }
+
+    .nav-container input[type="checkbox"]:checked~.hamburger-lines .line3 {
+        transform: rotate(-45deg);
+    }
+
+    .nav-container input[type="checkbox"]:checked~#menu {
+        display: block;
+    }
+</style>
+
+    <section
+        class="min-h-[60vh] md:min-h-screen flex flex-col justify-center items-center m-auto py-20 overflow-hidden pt-44">
+        <div class="container flex flex-col justify-center px-4">
+            <div class="block h-0 -z-10">
+                <div class="text-white dark:text-[#2A303C] text-9xl md:text-[240px] xl:text-[250px] 2xl:text-[280px] font-bold relative leading-[128px] md:leading-[220px] 2xl:leading-[250px] left-1/3 -top-[100px] md:-top-[150px] 2xl:-top-44 opacity-30"
+                    style="text-shadow:
+                1px 1px 0 #6C317F,
+                -1px -1px 0 #6C317F,
+                1px -1px 0 #6C317F,
+                -1px 1px 0 #6C317F,
+                1px 1px 0 #6C317F;">
+                    Kabinet<br>Pilar Impresif</div>
+            </div>
+            <div class="flex flex-row items-center gap-x-4 mb-2 md:mb-4">
+                <p class="text-base font-light">BEM KEMA POLBAN</p>
+                <div class="h-1 bg-bemsun w-12"></div>
+            </div>
+            <h1 class="text-5xl md:text-8xl font-extrabold text-bemsun font-sans md:leading-[5rem]">KABINET PILAR IMPRESIF</h1>
+        </div>
+        <div class="block mt-5 min-w-[11rem] w-full">
+            <img src="assets/images/foto-kabinet.png" class="w-full parallax" alt="BEM 2023"></img>
+        </div>
+    </section>
+
+    <section class="min-h-[60vh] md:min-h-screen xl:min-h-0 max-h-[70rem] flex justify-center items-center py-12">
+        <div class="container flex flex-col md:flex-row flex-wrap px-4 md:gap-4">
+            <div class="flex-1 flex justify-center pl-4">
+                <div class="block m-auto min-w-[12rem]">
+                    <img data-aos="fade-up" src="assets/favicon/logo_impresif.png"></img>
+                </div>
+            </div>
+            <div class="flex-1 flex flex-col justify-center mt-8 md:mt-0">
+                <p class="text-4xl font-bold">Tentang <span class="text-bemsun">Kabinet Pilar Impresif</span></p>
+                <h1 class="text-sm my-6 text-justify">
+                    Kabinet Pilar Impresif lahir dari rahim semangat perjuangan mahasiswa yang terbentuk dari gerakan - gerakan
+                    perubahan. Kata Pilar yang berarti merombak, mendobrak dan menyusun Kembali semangat dan niat
+                    perubahan untuk menjunjung tinggi nilai organisasi yang berintegritas, inklusif, adaptif dan sinergis di
+                    dalamnya. Lambang tangan mengepal yang mengambarkan semangat perubahan untuk menciptakan inovasi –
+                    inovasi pembaharuan di dalam setiap Gerakan yang diciptakan. Warna yang menggambarkan isi filosofis
+                    dalam kabinet yang menggambarkan keberanian, kekeluargaan, inklusif dan juga suci yang menjadi sifat
+                    dari setiap komponen yang berada di dalam kabinet Pilar Impresif untuk membawa semangat pembaharuan.
+                </h1>
+                <a href="" data-aos="zoom-in"
+                    class="bg-orange-500 hover:bg-orange-600 px-4 py-2 text-white rounded max-w-max">Kenali Kami Lebih
+                    Dalam!</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="min-h-screen flex flex-col justify-center items-center overflow-hidden pt-36 pb-20">
+        
+        <svg class="-z-20 relative left-0" width="3731" height="200" viewBox="0 0 3731 200" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path d="M3731 200L0 200L3731 0.000183105V200Z" fill="#6C317F" />
+        </svg>
+        <div class="block h-0 z-10">
+            <img class="relative scale-75 left-1/3 -top-8 md:-top-12"
+                src="" alt="">
+        </div>
+        
+        <div class="block w-full h-0 -z-10">
+            <svg class="relative w-[700px] parallax-ornament md:w-[891px] -top-24 -left-1/3 z-0 pointer-events-none"
+                width="891" height="891" viewBox="0 0 891 891" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="445.5" cy="445.5" r="295.5" stroke="white" stroke-opacity="0.1"
+                    stroke-width="300" />
+            </svg>
+        </div>
+        <div class="bg-bemsun w-full flex flex-col justify-center items-center -z-30 pb-12 pt-44">
+            <div class="container flex flex-row flex-wrap items-center px-4 z-10">
+                <div class="basis-full md:basis-2/5">
+                    <div class="w-full aspect-square rounded-2xl overflow-hidden">
+                        <img data-aos="fade-up" src="assets/images/Akbar_Armanda_Landing.png" class="w-full"
+                            alt="">
+                    </div>
+                </div>
+                <div class="basis-full md:basis-3/5 flex flex-col justify-center mt-8 md:pl-12">
+                    <p class="text-base text-justify text-white z-10">
+                        Hidup Mahasiswa! <br>
+                        Hidup Rakyat Indonesia!
+                        <br><br>
+                        Demi terwujudnya misi kami yang ke empat yaitu internasionalisasi dan digitalisasi BEM Kema Polban sebagai jawaban tantangan zaman dan dinamika perbuahan, kami berkomitmen besar untuk
+                        merevitalisasi pondasi dalam ruang-ruang digital BEM yang selama ini ada.
+                        Perombakan-perombakan ini adalah langkah konkret kami agar mampu mencapai relevansinya
+                        dengan
+                        kebutuhan mahasiswa hari ini.
+                        <br><br>
+                        Kita tahu bahwa BEM Kema Polban hari ini berdiri di tengah kemajuan digital. Melalui website
+                        yang
+                        kami perbaiki ini, kami berkomiten besar untuk menyesuaikan dengan kebutuhan-kebutuhan mahasiswa,
+                        mulai
+                        dari kanal informasi terpadu, ruang pemberdayaan dan pengembangan, hingga ruang pengaduan terpadu
+                        harapan sebagai upaya menjawab tantangan zaman. Besar harapan kami agar seluruh civitas akademika
+                        (terutama mahasiswa) menyambut ikhtikad ini dengan baik dan memanfaatkan sebaik-baiknya.
+                    </p>
+                    <p class="mt-8">
+                        <span class="text-base font-bold text-white">Akbar Armanda</span>
+                        <br>
+                        <span class="text-sm text-white">KETUA BEM KEMA POLBAN 2023</span>
+                    </p>
+                </div>
+            </div>
+            <div class="container flex flex-row flex-wrap items-center px-4 mt-16">
+                <div class="basis-full md:basis-2/5 md:order-last">
+                    <div class="w-full aspect-square rounded-2xl overflow-hidden">
+                        <img data-aos="fade-up" src="assets/images/Raihan_Ibrahim_Landing.png" class="w-full"
+                            alt="">
+                    </div>
+                </div>
+                <div class="basis-full md:basis-3/5 flex flex-col justify-center mt-8 md:pr-12 md:text-right">
+                    <p class="text-base text-justify text-white">
+                        Salam Sejahtera untuk kita semua <br>
+                        Hidup Mahasiswa <br>
+                        Hidup Rakyat Indonesia
+                        <br><br>
+                        Kemajuan zaman merupakan suatu keniscayaan yang tidak dapat dihindarkan. Salah satunya adalah
+                        perkembangan teknologi. Pada saat ini, dunia sedang memasuki era society 5.0. Pada era ini,
+                        teknologi
+                        bukan sekedar alat bantu saja melainkan sudah menjadi satu dengan kehidupan manusia sendiri.
+                        <br><br>
+                        Menyikapi hal tersebut, BEM Kema Polban melakukan upaya digitalisasi gerakan sebagai
+                        bentuk
+                        adaptasi terhadap kemajuan zaman. Upaya digitalisasi tersebut terwujud dalam program optimalisasi
+                        website BEM. Website yang dikerjakan oleh BEM
+                        melalui
+                        Departemen Komunikasi dan Informasi diharapkan dapat menjadi platform yang dapat dimanfaatkan oleh
+                        seluruh civitas akademika Politeknik Negeri Bandung
+                    </p>
+                    <p class="mt-8">
+                        <span class="text-base font-bold text-white">Raihan Ibrahim Sentosa</span>
+                        <br>
+                        <span class="text-sm text-white">WAKIL KETUA BEM KEMA POLBAN 2023</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <svg class="-z-20 relative right-0" width="3731" height="200" viewBox="0 0 3731 200" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path d="M1.74845e-05 -5.73984e-06L3731 0.000320435L0 200L1.74845e-05 -5.73984e-06Z" fill="#6C317F" />
+        </svg>
+    </section>
+    
+    <div class="block w-full h-0 -z-10">
+        <svg class="relative w-[700px] parallax-ornament md:w-[891px] -top-[500px] -right-1/3 z-0 pointer-events-none"
+            width="942" height="941" viewBox="0 0 942 941" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M194.123 304.096L799.761 141.815L637.481 747.453L194.123 304.096Z" stroke="white"
+                stroke-opacity="0.1" stroke-width="200" />
+        </svg>
+    </div>
+            <section class="min-h-screen flex flex-col justify-center items-center my-12">
+            <div class="container flex flex-col items-center px-4 gap-8">
+                <h2 class="text-4xl md:text-8xl font-bold mb-0 md:mb-8 text-left w-full">Artikel</h2>
+                <div data-aos="fade-up" class="flex flex-col w-full md:flex-row gap-6 md:gap-12">
+                    <img src="https://bem.unair.ac.id/public/storage/uploads/1668067927-masjid-pogung-dalangan-ZWJOTmqG0Ak-unsplash.jpg" alt=""
+                        class="aspect-video w-full object-cover rounded-2xl overflow-hidden bg-black/30">
+                    <div class="flex flex-col gap-4">
+                        <h4 class="text-xs bg-orange-500/80 text-white py-2 px-4 max-w-fit">Artikel Terbaru</h4>
+                        <h3 class="text-3xl font-bold">Hari Pahlawan dan Problematika Nasionalisme</h3>
+                        <p class="normalize-text text-justify" id="container-0" class="w-full">
+                             Hari pahlawan diperingati setiap tanggal 10 November, peringatan tersebut dilaksanakan secara setiap tahun untuk mengenang jasa perjuangan mereka yang telah gugur ataupun masih menjadi saksi hidup berjalannya Indonesia. Peringatan Hari Pahlawan seti...</p>
+                        <a href=""
+                            class="text-sm font-bold text-bemsun">Selengkapnya »</a>
+                    </div>
+                </div>
+                <a data-aos="zoom-in" href=""
+                    class="bg-orange-500 hover:bg-orange-600 px-4 py-2 text-white rounded max-w-max">Lihat Artikel Lain</a>
+            </div>
+        </section>
+        </div>
+    <div class="bg-bemblue dark:bg-slate-800 flex flex-col items-center justify-center">
+    <div class="lg:container grid grid-cols-1 md:grid-cols-2 px-4 items-center justify-center my-12 gap-4">
+        <div>
+                            <img src="assets/favicon/logo_pilar.png" class="h-32" alt="Logo Kabinet Pilar Impresif">
+                    </div>
+        
+        <div>
+            <div class="mb-4 md:mb-8">
+                <p class="text-sm text-white font-bold text-left md:text-right">Politeknik Negeri Bandung, Kabupaten Bandung Barat
+                </p>
+                <p class="text-sm text-white text-left md:text-right">Jl. Gegerkalong Hilir, Ciwaruga, Kec. Parongpong, Kabupaten Bandung Barat, Jawa Barat 40559</p>
+            </div>
+
+            <div class="flex flex-col items-start md:items-end">
+                <p class="text-sm text-white font-bold mb-4">Kenali Kami Lebih Dalam!</p>
+                <div class="flex flex-row gap-4">
+                    <a href="https://twitter.com/bemkemapolban" target="__Blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24"
+                            height="24" viewBox="0 0 30 30" style=" fill:#6C317F;">
+                            <path class="fill-slate-200"
+                                d="M28,6.937c-0.957,0.425-1.985,0.711-3.064,0.84c1.102-0.66,1.947-1.705,2.345-2.951c-1.03,0.611-2.172,1.055-3.388,1.295 c-0.973-1.037-2.359-1.685-3.893-1.685c-2.946,0-5.334,2.389-5.334,5.334c0,0.418,0.048,0.826,0.138,1.215 c-4.433-0.222-8.363-2.346-10.995-5.574C3.351,6.199,3.088,7.115,3.088,8.094c0,1.85,0.941,3.483,2.372,4.439 c-0.874-0.028-1.697-0.268-2.416-0.667c0,0.023,0,0.044,0,0.067c0,2.585,1.838,4.741,4.279,5.23 c-0.447,0.122-0.919,0.187-1.406,0.187c-0.343,0-0.678-0.034-1.003-0.095c0.679,2.119,2.649,3.662,4.983,3.705 c-1.825,1.431-4.125,2.284-6.625,2.284c-0.43,0-0.855-0.025-1.273-0.075c2.361,1.513,5.164,2.396,8.177,2.396 c9.812,0,15.176-8.128,15.176-15.177c0-0.231-0.005-0.461-0.015-0.69C26.38,8.945,27.285,8.006,28,6.937z">
+                            </path>
+                        </svg>
+                    </a>
+                    <a href="https://www.instagram.com/bemkemapolban" target="__Blank">
+                        <svg width="25" height="24" viewBox="0 0 25 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path class="fill-slate-200"
+                                d="M12.8641 7.9983C10.6606 7.9983 8.86242 9.79651 8.86242 12C8.86242 14.2035 10.6606 16.0017 12.8641 16.0017C15.0675 16.0017 16.8657 14.2035 16.8657 12C16.8657 9.79651 15.0675 7.9983 12.8641 7.9983ZM24.8659 12C24.8659 10.3429 24.881 8.70077 24.7879 7.04665C24.6948 5.12536 24.2565 3.4202 22.8516 2.01525C21.4437 0.607302 19.7416 0.172008 17.8203 0.0789456C16.1632 -0.0141173 14.5211 0.000892936 12.8671 0.000892936C11.21 0.000892936 9.56789 -0.0141173 7.9138 0.0789456C5.99254 0.172008 4.28742 0.610305 2.8825 2.01525C1.47457 3.42321 1.03928 5.12536 0.946223 7.04665C0.853162 8.70377 0.868172 10.3459 0.868172 12C0.868172 13.6541 0.853162 15.2992 0.946223 16.9533C1.03928 18.8746 1.47757 20.5798 2.8825 21.9847C4.29042 23.3927 5.99254 23.828 7.9138 23.9211C9.57089 24.0141 11.213 23.9991 12.8671 23.9991C14.5241 23.9991 16.1662 24.0141 17.8203 23.9211C19.7416 23.828 21.4467 23.3897 22.8516 21.9847C24.2595 20.5768 24.6948 18.8746 24.7879 16.9533C24.884 15.2992 24.8659 13.6571 24.8659 12ZM12.8641 18.1572C9.45681 18.1572 6.70701 15.4073 6.70701 12C6.70701 8.5927 9.45681 5.84284 12.8641 5.84284C16.2713 5.84284 19.0211 8.5927 19.0211 12C19.0211 15.4073 16.2713 18.1572 12.8641 18.1572ZM19.2733 7.02864C18.4777 7.02864 17.8353 6.38621 17.8353 5.59067C17.8353 4.79513 18.4777 4.1527 19.2733 4.1527C20.0688 4.1527 20.7112 4.79513 20.7112 5.59067C20.7114 5.77957 20.6744 5.96667 20.6022 6.14124C20.5301 6.31581 20.4241 6.47442 20.2906 6.608C20.157 6.74157 19.9984 6.84748 19.8238 6.91967C19.6493 6.99185 19.4622 7.02888 19.2733 7.02864Z"
+                                fill="#6C317F" />
+                        </svg>
+                    </a>
+                    <a href="https://youtube.com/c/BEMKEMAPOLBAN" target="__Blank">
+                        <svg width="35" height="24" viewBox="0 0 35 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path class="fill-slate-200"
+                                d="M34.2868 3.75519C33.8942 2.27706 32.7376 1.11294 31.2691 0.717875C28.6072 0 17.9336 0 17.9336 0C17.9336 0 7.26009 0 4.59821 0.717875C3.12967 1.113 1.97307 2.27706 1.58052 3.75519C0.867279 6.43437 0.867279 12.0243 0.867279 12.0243C0.867279 12.0243 0.867279 17.6141 1.58052 20.2933C1.97307 21.7714 3.12967 22.8871 4.59821 23.2821C7.26009 24 17.9336 24 17.9336 24C17.9336 24 28.6072 24 31.2691 23.2821C32.7376 22.8871 33.8942 21.7714 34.2868 20.2933C35 17.6141 35 12.0243 35 12.0243C35 12.0243 35 6.43437 34.2868 3.75519ZM14.4428 17.0994V6.94906L23.3638 12.0244L14.4428 17.0994Z"
+                                fill="#6C317F" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <p class="text-gray-400 my-4 px-4 text-center">© Copyright
+        <script>
+            document.write(new Date().getFullYear())
+        </script> Badan Eksekutif Mahasiswa KEMA POLBAN
+    </p>
+</div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+        integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        
+    <script src="https://cdn.jsdelivr.net/npm/editorjs-html@3.4.0/build/edjsHTML.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script>
+    
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <script>
+        var image = document.getElementsByClassName('parallax');
+        new simpleParallax(image, {
+            scale: 1.4,
+            orientation: 'down',
+        });
+        var image = document.querySelectorAll('.parallax-ornament');
+        new simpleParallax(image, {
+            overflow: true,
+        });
+
+        // AUDIO Player
+        let songplay = 1;
+
+        $(document).ready(function() {
+            var media = document.getElementById('backsound');
+            media.muted = true;
+            media.play();
+            media.muted = false;
+        });
+
+        setTimeout(function() {
+            if (document.getElementById('backsound').paused) {
+                songplay = 0;
+            }
+        }, 500);
+
+        $('#backsound').prop("volume", 0.35);
+        $('#backsound').ready(function() {
+            if (document.getElementById('backsound').paused && $('#music-icon').hasClass('playing')) {
+                $('#text-lagu').css('opacity', '0');
+            } else {
+                $('#text-lagu').css('opacity', '1');
+                setTimeout(function() {
+                    $('#text-lagu').css('opacity', '0');
+                }, 5000);
+            }
+        })
+
+        function playPause() {
+            var mediaPlayer = document.getElementById('backsound');
+            if (mediaPlayer.paused) {
+                $('#music-icon').removeAttr('class').addClass('circular-loader')
+                $('#music-icon').html(
+                    `<circle class="loader-path" cx="12" cy="12" r="6" fill="none" stroke="#70c542" stroke-width="1" />`
+                )
+                mediaPlayer.play().then(() => {
+                    songplay = 1;
+                    $('#music-icon').removeAttr('class')
+                    // $('#music-icon').addClass('playing')
+                    $('#music-icon').html(
+                        `<path d="M13 5L8 9H4V15H8L13 19V5Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M17.54 8.46C18.4774 9.39764 19.004 10.6692 19.004 11.995C19.004 13.3208 18.4774 14.5924 17.54 15.53" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>`
+                    )
+                    $('#text-lagu').css('opacity', '1');
+                    setTimeout_(function() {
+                        $('#text-lagu').css('opacity', '0');
+                    }, 5000);
+                    setTimeout(
+                        function() {
+                            $('#text-lagu').css('opacity', '0');
+                            // $('#music-icon').removeAttr('class').addClass('playing')
+                        }, 1000);
+                });
+                // mediaPlayer.play();
+            } else {
+                mediaPlayer.pause();
+                songplay = 0;
+                $('#music-icon').html(`<path d="M11 5L6 9H2V15H6L11 19V5Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M23 9L17 15" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M17 9L23 15" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>`)
+                $('#text-lagu').css('opacity', '0');
+            }
+        }
+
+        function pauseTemporary() {
+            var mediaPlayer = document.getElementById('backsound');
+            if (!mediaPlayer.paused) {
+                // console.log('ngepause')
+                mediaPlayer.pause();
+            } else if (songplay && mediaPlayer.paused) {
+                // console.log('ngeplay')
+                mediaPlayer.play();
+            }
+        }
+    </script>
+</body>
+
+</html>
